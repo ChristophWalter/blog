@@ -60,7 +60,7 @@ test("should load and show continents", async () => {
 });
 ```
 To make this test pass, we add the query to our component and show a loading messing until it gets resolved:
-```js
+```vue
 <template>
   <div v-if="loading">
     loading...
@@ -119,7 +119,7 @@ test("should show an error when loading continents fails", async () => {
 });
 ```
 The implementation could look like the following.
-```js
+```vue
 <template>
   <div v-if="loading">
     loading...
@@ -172,7 +172,7 @@ export default {
 So far so good, we are able to load data, show it and handle errors. All of this in a test driven approach. The only drawback so far ist that we gave up the nice interface components which come with apollo. To tackle that we will introduce our own component, specifically tied to our needs. While keeping our tests green all the time, as this refactoring only affects the implementation details.
 
 We will introduce a component which receives a query and provides the response, a loading and error indicator. Our current component will be reduced to the business logic:
-```js
+```vue
 <template>
   <ContinentDataFetcher :query="getContinents">
     <template v-slot="{ response, loading, error }">
@@ -212,7 +212,7 @@ export default {
 ```
 The extracted code belongs to a new data fetcher or data provider component. This components just provides some data and will not render and DOM elements, it is a so called [renderless component](https://adamwathan.me/renderless-components-in-vuejs/). Above we can already see how to use it, so lets take a look at its implementation:
 
-```js
+```vue
 <script>
 export default {
   name: "ContinentDataFetcher",
