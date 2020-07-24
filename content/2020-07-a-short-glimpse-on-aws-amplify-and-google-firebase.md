@@ -29,4 +29,4 @@ And there are no premade queries or mutations to start with.
 ## When to use what?
 You better take a closer look at both of them before making a decision. Or just get started and try them. :)
 
-One thing you might get out of this glimpse is to think about your data structure. Would you benefit from typed data model?
+One thing you might get out of this glimpse is to think about your data structure. Would you benefit from a typed data model?
