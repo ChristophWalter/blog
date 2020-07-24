@@ -1,4 +1,4 @@
-# A short glimpse on AWS amplify and Google Firebase
+# A short glimpse on AWS Amplify and Google Firebase
 
 AWS Amplify and Google Firebase are two responses to the need for fast and scaling application development. 
 The provided services can help to evaluate ideas quickly while serving near endless amount of traffic.
