@@ -14,7 +14,7 @@ Amplify provides not only services to tackle this, but also a set of default com
 Registration, Login, Logout are solved problems. 
 Better focus on generating real bussiness value. 
 
-## What Amplify will not do for us?
+## What will Amplify not do for us?
 You will still have to impement your business logic and say your application what to do with this data.
 Creating nice user interfaces will also stay under your control. From handling form inputs to styling.
 
